@@ -1,0 +1,9 @@
+.check-status {
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(84, 168, 247);
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
