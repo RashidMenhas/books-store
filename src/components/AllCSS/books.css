@@ -1,0 +1,41 @@
+.input-form {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 30px;
+}
+
+.input-form-feild {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.booktitle {
+  width: 40%;
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.category {
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.add-book {
+  width: 10%;
+  background-color: rgb(49, 137, 252);
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 25px;
+  color: rgb(70, 70, 70);
+}
