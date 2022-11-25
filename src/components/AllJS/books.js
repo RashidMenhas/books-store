@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import BookList from './booklist';
 import { ADD_BOOK } from '../../redux/books/books';
+import api from '../../api/api';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -22,8 +23,8 @@ const Books = () => {
     if (titlecheck.value === '' || authorcheck.value === '') {
       alert('Please fill the field');
     } else {
+      api.addNewBook(book);
       dispatch(ADD_BOOK(book));
-
       titlecheck.value = '';
       authorcheck.value = '';
     }

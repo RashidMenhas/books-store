@@ -12,7 +12,7 @@ class App extends React.PureComponent {
       <Router>
         <div>
           <nav>
-            <h1>BookStore CMS</h1>
+            <h1 className="logo">BookStore CMS</h1>
             <ul className="links">
               <li>
                 <Link to="/">Books</Link>
