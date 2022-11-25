@@ -26,11 +26,16 @@ export const bookReducer = (state = [], action) => {
 };
 
 export const removeBook = (bookId) => async (dispatch) => {
-  api.deleteBook(bookId);
   dispatch(REMOVE_BOOK(bookId));
+  api.deleteBook(bookId);
 };
 
 export const getBooks = () => async (dispatch) => {
   const books = await api.fetchBooks();
   dispatch(GET_BOOKS(books));
+};
+
+export const addNewBook = (book) => async (dispatch) => {
+  dispatch(ADD_BOOK(book));
+  await api.addNewBook(book);
 };
