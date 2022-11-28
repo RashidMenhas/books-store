@@ -20,7 +20,11 @@ class App extends React.PureComponent {
               <li>
                 <Link to="/categories">Categories</Link>
               </li>
+              <div>
+                <div className="oval"><img src={`${process.env.PUBLIC_URL}images/profile-icon.svg`} alt="profile-icon" /></div>
+              </div>
             </ul>
+
           </nav>
 
           <Routes>

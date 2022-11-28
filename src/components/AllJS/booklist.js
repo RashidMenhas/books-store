@@ -7,6 +7,7 @@ function BookList() {
   const selector = useSelector((state) => state.bookReducer);
   const dispatch = useDispatch();
   useEffect(() => {
+    console.log(getBooks);
     dispatch(getBooks());
   }, []);
   return (
