@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: rgb(222, 240, 233);
+  background-color: rgb(238, 238, 238);
 }
 
 nav {
@@ -21,7 +21,8 @@ nav {
 }
 
 .logo {
-  color: blue;
+  color: #0290ff;
+  margin-left: 95px;
 }
 
 .oval {
@@ -34,5 +35,16 @@ nav {
 }
 
 .links li link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.books-link {
+  color: #121212;
+  text-decoration: none;
+}
+
+.categories-link {
+  color: #121212;
   text-decoration: none;
 }

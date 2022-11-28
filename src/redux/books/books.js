@@ -1,4 +1,4 @@
-import { createAction } from '@reduxjs/toolkit';
+import { createAction, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../../api/api';
 
 export const ADD_BOOK = createAction('ADD_BOOK');
@@ -25,17 +25,26 @@ export const bookReducer = (state = [], action) => {
   return state;
 };
 
-export const removeBook = (bookId) => async (dispatch) => {
-  dispatch(REMOVE_BOOK(bookId));
-  api.deleteBook(bookId);
-};
+export const removeBook = createAsyncThunk(
+  'books/removeBook',
+  async (bookId, thunkApi) => {
+    thunkApi.dispatch(REMOVE_BOOK(bookId));
+    api.deleteBook(bookId);
+  },
+);
 
-export const getBooks = () => async (dispatch) => {
-  const books = await api.fetchBooks();
-  dispatch(GET_BOOKS(books));
-};
+export const getBooks = createAsyncThunk(
+  'books/getBooks',
+  async (_, thunkApi) => {
+    const books = await api.fetchBooks();
+    thunkApi.dispatch(GET_BOOKS(books));
+  },
+);
 
-export const addNewBook = (book) => async (dispatch) => {
-  dispatch(ADD_BOOK(book));
-  await api.addNewBook(book);
-};
+export const addNewBook = createAsyncThunk(
+  'books/addNewBook',
+  async (book, thunkApi) => {
+    thunkApi.dispatch(ADD_BOOK(book));
+    await api.addNewBook(book);
+  },
+);

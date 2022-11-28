@@ -20,7 +20,11 @@ const AddBook = ({ id, title, author }) => {
             <h3 className="author">{author}</h3>
             <div className="set-btn">
               <p className="btn-comments">Comments</p>
-              <p className="btn-remove" onClick={() => removeBookBtn(id)} onKeyUp={() => removeBookBtn(id)}>
+              <p
+                className="btn-remove"
+                onClick={() => removeBookBtn(id)}
+                onKeyUp={() => removeBookBtn(id)}
+              >
                 Remove
               </p>
               <p className="btn-edit">Edit</p>
@@ -35,6 +39,7 @@ const AddBook = ({ id, title, author }) => {
                 <span className="Completed Text-Style-2">Completed</span>
               </span>
             </div>
+            <div className="vertical-line" />
             <div className="end-section">
               <span className="Current-Chapter">Current Chapter</span>
               <span className="Current-Lesson Text-Style-4">Chapter 17</span>
