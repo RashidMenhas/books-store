@@ -22,10 +22,6 @@
   opacity: 0.5;
   font-size: 1.175rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--black-two);
   padding: 5px;
 }
@@ -35,8 +31,6 @@
   height: 1.813rem;
   font-weight: bold;
   font-size: 25px;
-  font-stretch: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
   margin: unset;
@@ -48,10 +42,6 @@
   height: 1.188rem;
   font-size: 1.295rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   margin: unset;
   padding: 2px;
@@ -69,10 +59,6 @@
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   cursor: pointer;
   font-size: 18px;
@@ -83,10 +69,6 @@
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   font-size: 18px;
 }
@@ -96,10 +78,6 @@
   height: 1.188rem;
   margin: 0.188rem 18.625rem 0.125rem 1.063rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
   font-size: 18px;
 }
@@ -134,22 +112,12 @@
 
 .Percent-Complete {
   font-size: 2rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
 .Completed {
   opacity: 0.5;
   font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -163,9 +131,6 @@
   opacity: 0.5;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #121212;
 }
@@ -173,9 +138,6 @@
 .Current-Lesson {
   font-size: 1rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   color: #121212;
 }
@@ -186,10 +148,7 @@
   background-color: #0290ff;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
