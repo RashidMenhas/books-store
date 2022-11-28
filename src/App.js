@@ -12,7 +12,7 @@ class App extends React.PureComponent {
       <Router>
         <div>
           <nav>
-            <h1>BookStore CMS</h1>
+            <h1 className="logo">BookStore CMS</h1>
             <ul className="links">
               <li>
                 <Link to="/">Books</Link>
@@ -20,7 +20,11 @@ class App extends React.PureComponent {
               <li>
                 <Link to="/categories">Categories</Link>
               </li>
+              <div>
+                <div className="oval"><img src={`${process.env.PUBLIC_URL}images/profile-icon.svg`} alt="profile-icon" /></div>
+              </div>
             </ul>
+
           </nav>
 
           <Routes>

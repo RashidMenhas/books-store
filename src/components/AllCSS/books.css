@@ -1,10 +1,10 @@
 .input-form {
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
 .input-form-feild {
@@ -14,20 +14,20 @@
 }
 
 .booktitle {
-  width: 40%;
+  width: 45%;
   height: 40px;
   margin-left: 5px;
   border-radius: 5px;
 }
 
 .category {
-  width: 30%;
+  width: 32%;
   height: 40px;
   border-radius: 5px;
 }
 
 .add-book {
-  width: 10%;
+  width: 12%;
   background-color: rgb(49, 137, 252);
   color: aliceblue;
   border-radius: 5px;
