@@ -25,6 +25,7 @@ export const bookReducer = (state = [], action) => {
   return state;
 };
 
+// Use createAsyncThunk with removeBook method to remove Books
 export const removeBook = createAsyncThunk(
   'books/removeBook',
   async (bookId, thunkApi) => {
@@ -33,6 +34,7 @@ export const removeBook = createAsyncThunk(
   },
 );
 
+// Use createAsyncThunk with getBook method to get all Books
 export const getBooks = createAsyncThunk(
   'books/getBooks',
   async (_, thunkApi) => {
@@ -41,6 +43,7 @@ export const getBooks = createAsyncThunk(
   },
 );
 
+// Use createAsyncThunk with addNewBook method to add new Books
 export const addNewBook = createAsyncThunk(
   'books/addNewBook',
   async (book, thunkApi) => {
