@@ -131,7 +131,6 @@
   opacity: 0.5;
   font-size: 0.813rem;
   font-weight: 300;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -151,4 +150,10 @@
   letter-spacing: 0.5px;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+.vertical-line {
+  width: 1px;
+  height: 80px;
+  background-color: #e8e8e8;
 }

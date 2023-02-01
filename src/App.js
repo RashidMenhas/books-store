@@ -15,16 +15,24 @@ class App extends React.PureComponent {
             <h1 className="logo">BookStore CMS</h1>
             <ul className="links">
               <li>
-                <Link to="/">Books</Link>
+                <Link className="books-link" style={{ textDecoration: 'none' }} to="/">
+                  Books
+                </Link>
               </li>
               <li>
-                <Link to="/categories">Categories</Link>
+                <Link className="categories-link" style={{ textDecoration: 'none' }} to="/categories">
+                  Categories
+                </Link>
               </li>
               <div>
-                <div className="oval"><img src={`${process.env.PUBLIC_URL}images/profile-icon.svg`} alt="profile-icon" /></div>
+                <div className="oval">
+                  <img
+                    src={`${process.env.PUBLIC_URL}images/profile-icon.svg`}
+                    alt="profile-icon"
+                  />
+                </div>
               </div>
             </ul>
-
           </nav>
 
           <Routes>
